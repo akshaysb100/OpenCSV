@@ -24,10 +24,8 @@ public class openCSVReadAndParseToBean {
                     .withType(CSVUser.class)
                     .withIgnoreLeadingWhiteSpace(true)
                     .build();
-            Iterator<CSVUser> csvUserIterator = cavToBean.iterator();
-            while (csvUserIterator.hasNext()) {
-
-                CSVUser csvUser = csvUserIterator.next();
+           List<CSVUser> csvUsers = cavToBean.parse();
+            for (CSVUser csvUser : csvUsers){
                 System.out.println("Name : " + csvUser.getName());
                 System.out.println("Email : " + csvUser.getEmail());
                 System.out.println("Phone : " + csvUser.getPhoneNo());
