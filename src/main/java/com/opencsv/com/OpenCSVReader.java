@@ -10,7 +10,7 @@ import java.util.List;
 
 public class OpenCSVReader {
 
-     private static final String SAMPLE_CSV_FILE_PATH = "/home/user/IdeaProjects/OpenCSVFile/src/main/java/user.csv";
+     private static final String SAMPLE_CSV_FILE_PATH = "/home/user/IdeaProjects/OpenCSVFile/src/main/java/com/opencsv/com/user.csv";
 
     public static void main(String[] args) {
 

@@ -16,6 +16,13 @@ public class CSVUser {
     @CsvBindByName
     private String country;
 
+    public CSVUser(String name, String email, String phoneNo, String country) {
+        this.name = name;
+        this.email = email;
+        this.phoneNo = phoneNo;
+        this.country = country;
+    }
+
     public String getName() {
         return name;
     }
